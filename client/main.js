@@ -12,7 +12,7 @@ const page1trakcer = (props, onData) => {
 
 const page1comp = ({ test }) => <div>
   <h1>page1</h1>
-  {test.map(t => <div key={t._id}>{t.text}</div>)}
+  {test.map(t => <div key={t._id}>{t.type}: {t.text}</div>)}
 </div>
 
 const Page1 = composeWithTracker(page1trakcer)(page1comp)
@@ -26,7 +26,7 @@ const page2trakcer = (props, onData) => {
 
 const page2comp = ({ test }) => <div>
   <h1>page2</h1>
-  {test.map(t => <div key={t._id}>{t.text}</div>)}
+  {test.map(t => <div key={t._id}>{t.type}: {t.text}</div>)}
 </div>
 
 const Page2 = composeWithTracker(page2trakcer)(page2comp)
