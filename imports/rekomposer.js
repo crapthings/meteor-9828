@@ -1,8 +1,7 @@
 import React from 'react'
 import recompact from 'recompact'
 
-import isEqual from 'lodash.isequal'
-import omit from 'lodash.omit'
+import { isEqual, omit } from 'lodash'
 
 const {
   compose,
